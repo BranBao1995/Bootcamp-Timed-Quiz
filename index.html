@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <title>Timed Quiz</title>
+  </head>
+  <body class="container">
+    <header>
+      <span class="view-scores">View high scores</span>
+      <span class="time-display">Time: </span>
+    </header>
+
+    <section class="start-game" style="display: block">
+      <h1>Welcome to the JavaScript Quiz!</h1>
+      <p>
+        This quiz can help you keep track of your learning process. Questions
+        will be updated regularly to better test your understanding on
+        JavaScript.
+      </p>
+      <button class="start-button">Start quiz</button>
+    </section>
+
+    <section class="quiz-question" id="p1" style="display: none">
+      <h1 class="question">
+        The commonly used data types do not include:
+        <span
+          style="
+            display: table-cell;
+            width: 70px;
+            border-bottom: 3px black solid;
+          "
+        ></span
+        >.
+      </h1>
+
+      <div class="button-container">
+        <button class="q1" data-correct="false">1. numbers</button>
+        <button class="q1" data-correct="false">2. strings</button>
+        <button class="q1" data-correct="false">3. boolean</button>
+        <button class="q1" data-correct="true">4. integers</button>
+      </div>
+    </section>
+    <section class="quiz-question" id="p2" style="display: none">
+      <h1 class="question">
+        Inside which HTML element do we put the JavaScript?
+      </h1>
+
+      <div class="button-container">
+        <button class="q2" data-correct="false">1. &lt;javascript&gt;</button>
+        <button class="q2" data-correct="false">2. &lt;scripting&gt;</button>
+        <button class="q2" data-correct="true">3. &lt;script&gt;</button>
+        <button class="q2" data-correct="false">4. &lt;js&gt;</button>
+      </div>
+
+      <!-- <h1 class="message" style="display: none">Correct</h1> -->
+    </section>
+    <section class="quiz-question" id="p3" style="display: none">
+      <h1 class="question">
+        Where is the correct place to insert a JavaScript?
+      </h1>
+
+      <div class="button-container">
+        <button class="q3" data-correct="false">
+          1. The &lt;head&gt; section
+        </button>
+        <button class="q3" data-correct="false">
+          2. Both the &lt;head&gt; section and the &lt;body&gt; are correct
+        </button>
+        <button class="q3" data-correct="true">
+          3. The &lt;body&gt; section
+        </button>
+      </div>
+
+      <!-- <h1 class="message" style="display: none">Correct</h1> -->
+    </section>
+    <section class="quiz-question" id="p4" style="display: none">
+      <h1 class="question">
+        What is the correct syntax for referring to an external script called
+        "xxx.js"?
+      </h1>
+
+      <div class="button-container">
+        <button class="q4" data-correct="false">
+          1. &lt;script href="xxx.js"&gt;
+        </button>
+        <button class="q4" data-correct="false">
+          2. &lt;script name="xxx.js"&gt;
+        </button>
+        <button class="q4" data-correct="true">
+          3. &lt;script src="xxx.js"&gt;
+        </button>
+      </div>
+
+      <!-- <h1 class="message" style="display: none">Correct</h1> -->
+    </section>
+    <section class="quiz-question" id="p5" style="display: none">
+      <h1 class="question">
+        The external JavaScript file must contain the &lt;script&gt; tag.
+      </h1>
+
+      <div class="button-container">
+        <button class="q5" data-correct="true">1. True</button>
+        <button class="q5" data-correct="false">2. False</button>
+      </div>
+
+      <!-- <h1 class="message" style="display: none">Correct</h1> -->
+    </section>
+
+    <section class="quiz-question" id="p6" style="display: none">
+      <h1 class="question">How do you write "Hello World" in an alert box?</h1>
+
+      <div class="button-container">
+        <button class="q6" data-correct="true">1. alert("Hello World")</button>
+        <button class="q6" data-correct="false">
+          2. msgBox("Hello World")
+        </button>
+        <button class="q6" data-correct="false">3. msg("Hello World")</button>
+        <button class="q6" data-correct="false">
+          4. alertBox("Hello World")
+        </button>
+      </div>
+
+      <!-- <h1 class="message" style="display: none">Correct</h1> -->
+    </section>
+
+    <p class="message" style="display: none">Correct</p>
+
+    <section class="final-score" style="display: none">
+      <h1>All done!</h1>
+      <p class="score-display">Your score is:</p>
+      <form class="form">
+        <label for="initials">Enter your initials:</label>
+        <input type="text" id="initials" />
+        <button class="submit-score">Submit</button>
+      </form>
+    </section>
+
+    <section class="view-history" style="display: none">
+      <ul class="view-scores-list"></ul>
+      <div class="button-pair">
+        <button class="button-go-back">Go back</button>
+        <button class="clear-scores">Clear scores</button>
+      </div>
+    </section>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
