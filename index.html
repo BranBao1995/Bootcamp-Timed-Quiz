@@ -18,6 +18,7 @@
     <header>
       <span class="view-scores">View high scores</span>
       <span class="time-display">Time: </span>
+      <span class="score-counter">Score: </span>
     </header>
 
     <section class="start-game" style="display: block">
@@ -30,7 +31,9 @@
       <button class="start-button">Start quiz</button>
     </section>
 
+    <!-- Adding UI elements for quiz questions -->
     <section class="quiz-question" id="p1" style="display: none">
+      <!--Display will be set to none until rendered-->
       <h1 class="question">
         The commonly used data types do not include:
         <span
@@ -50,6 +53,7 @@
         <button class="button q1" data-correct="true">4. integers</button>
       </div>
     </section>
+    <!-- Adding UI elements for quiz questions -->
     <section class="quiz-question" id="p2" style="display: none">
       <h1 class="question">
         Inside which HTML element do we put the JavaScript?
@@ -65,9 +69,9 @@
         <button class="button q2" data-correct="true">3. &lt;script&gt;</button>
         <button class="button q2" data-correct="false">4. &lt;js&gt;</button>
       </div>
-
-      <!-- <h1 class="message" style="display: none">Correct</h1> -->
     </section>
+
+    <!-- Adding UI elements for quiz questions -->
     <section class="quiz-question" id="p3" style="display: none">
       <h1 class="question">
         Where is the correct place to insert a JavaScript?
@@ -84,9 +88,9 @@
           3. The &lt;body&gt; section
         </button>
       </div>
-
-      <!-- <h1 class="message" style="display: none">Correct</h1> -->
     </section>
+
+    <!-- Adding UI elements for quiz questions -->
     <section class="quiz-question" id="p4" style="display: none">
       <h1 class="question">
         What is the correct syntax for referring to an external script called
@@ -104,9 +108,9 @@
           3. &lt;script src="xxx.js"&gt;
         </button>
       </div>
-
-      <!-- <h1 class="message" style="display: none">Correct</h1> -->
     </section>
+
+    <!-- Adding UI elements for quiz questions -->
     <section class="quiz-question" id="p5" style="display: none">
       <h1 class="question">
         The external JavaScript file must contain the &lt;script&gt; tag.
@@ -116,9 +120,9 @@
         <button class="button q5" data-correct="true">1. True</button>
         <button class="button q5" data-correct="false">2. False</button>
       </div>
-
-      <!-- <h1 class="message" style="display: none">Correct</h1> -->
     </section>
+
+    <!-- Adding UI elements for quiz questions -->
 
     <section class="quiz-question" id="p6" style="display: none">
       <h1 class="question">How do you write "Hello World" in an alert box?</h1>
@@ -137,12 +141,11 @@
           4. alertBox("Hello World")
         </button>
       </div>
-
-      <!-- <h1 class="message" style="display: none">Correct</h1> -->
     </section>
 
     <p class="message" style="display: none">Correct</p>
 
+    <!--UI element for the final score page rendered when the game is over-->
     <section class="final-score" style="display: none">
       <h1>All done!</h1>
       <p class="score-display">Your score is:</p>
@@ -153,6 +156,7 @@
       </form>
     </section>
 
+    <!--UI element for the view high scores page when user chooses to view high scores-->
     <section class="view-history" style="display: none">
       <ul class="view-scores-list"></ul>
       <div class="button-pair">

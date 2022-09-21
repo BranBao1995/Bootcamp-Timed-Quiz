@@ -33,6 +33,16 @@ header .view-scores:hover {
   color: var(--button-color-hover);
 }
 
+header .time-display {
+  font-family: var(--text-primary);
+  color: var(--button-color);
+}
+
+header .score-counter {
+  font-family: var(--text-primary);
+  color: var(--button-color);
+}
+
 .start-game {
   display: block;
   height: 70%;
@@ -215,6 +225,24 @@ header .view-scores:hover {
 
 .view-history ul {
   list-style: none;
+  margin-bottom: 50px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  row-gap: 20px;
+}
+
+.view-history ul li {
+  font-family: var(--text-primary);
+  font-size: 30px;
+  color: var(--correct-color);
+  border: none;
+  border-radius: 10px;
+  background-color: var(--border-color);
+  padding: 10px 10px;
 }
 
 .view-history .button-pair {
